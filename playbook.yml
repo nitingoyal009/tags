@@ -6,9 +6,10 @@
             yum:
                     name: vsftpd
                     state: installed
+            tags: ftp
 
           - name: install php
             yum:
                     name: php
                     state: installed
-
+            tags: php
