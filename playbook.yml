@@ -1,0 +1,14 @@
+---
+- name: Tags
+  hosts: all
+  tasks:
+          - name: install vsftpd
+            yum:
+                    name: vsftpd
+                    state: installed
+
+          - name: install php
+            yum:
+                    name: php
+                    state: installed
+
